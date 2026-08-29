@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}/* Da las bases a la pag y dando los fonts que se utilizaran en la pagina */
+
+body {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('hero-stacion.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);/* ajuste de opacidad */
+    z-index: 1;
+}
+
+.navbar, .hero-content {
+    position: relative;
+    z-index: 2; /*basicamente z-index son las capas de la pagina*/
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
